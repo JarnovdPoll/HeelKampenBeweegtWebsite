@@ -1,7 +1,12 @@
 class MainHeader extends HTMLElement {
     connectedCallback() {
         this.innerHTML = ` 
-        <header class="red">This is the header.</header>
+        <div class="header">
+  <a href="#home" class="logo">CompanyLogo</a>
+  <div class="header-right">
+    <a href="#home">Home</a>
+  </div>
+</div>
         `
     }
 }
