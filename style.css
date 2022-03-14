@@ -3,6 +3,8 @@ div.header {
     width: 100%;
     padding-top: 5px;
     height: 50px;
+    padding-top: 1%;
+    padding-bottom: 2%;
 }
 
 a[href].aanmelden{
@@ -10,7 +12,7 @@ a[href].aanmelden{
 }
 
 a[href].login{
-  background-color: dodgerblue;
+  background-color: #004687;
   border-radius: 10px;
   font-size: 30px;
   color:white;
@@ -71,6 +73,7 @@ button.header {
 
 h1.middle {
   text-align: center;
+  color: #004687;
 }
 
 div.middle {
@@ -90,8 +93,17 @@ div.activity {
 .button{
   font-size: 20px;
   padding: 10px 10px;
-  background-color: darkblue;
-  font-colour: white;
+  background-color: #004687;
+  color: white;
+  border: none;
+}
+
+.button2{
+  font-size: 20px;
+  padding: 10px 10px;
+  background-color: rgb(255, 255, 255);
+  color: #004687;
+  border: none;
 }
 
 .afbeelding{
@@ -102,7 +114,11 @@ div.activity {
 
 div.blue {
   padding: 0;
-  background-color: lightblue;
+  background-color: #004687;
+  color: white;
+  
+  padding: 5%;
+
 }
 
 body.default {
