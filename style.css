@@ -72,6 +72,7 @@ button.header {
 }
 
 h1.middle {
+  padding-top: 30px;
   text-align: center;
   color: #004687;
 }
@@ -123,4 +124,26 @@ div.blue {
 
 body.default {
   margin: 0;
+}
+
+div.home{
+  padding-bottom: 80px;
+}
+
+div.footer{
+  display:inline-block;
+  background-color: #004687;
+  width: 100%;
+  height: 200px;
+  color: white;
+  
+}
+
+div.contact{
+  padding-left:10%;
+}
+
+div.informatie{
+  float: center;
+  
 }
