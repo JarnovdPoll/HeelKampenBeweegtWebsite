@@ -77,21 +77,11 @@ h1.middle {
   color: #004687;
 }
 
-html *
-{
-  font-family: "SF Pro Display";
-}
-
 div.middle {
   width: 100%;
   text-align: center;
   width: 100%;
   display: table;
-}
-
-@font-face {
-  font-family: SF Pro Display;
-  src: url(//db.onlinewebfonts.com/t/0b51833ff62e4af8acb5fd3e2bf59e97.woff);
 }
 
 div.activity {
@@ -167,14 +157,14 @@ div.footer{
   display:inline-block;
   background-color: #004687;
   width: 100%;
-  height: 200px;
+  height: 250px;
   color: white;
   display: table;
 }
 
 div.contact{
   padding-left:10%;
-  width: 10%;
+  width: 24%;
   display: table-cell;
 
   }
@@ -182,20 +172,24 @@ div.contact{
 div.informatie{
   vertical-align:left;
   text-align: center;
-  width: 40%;
+  width: 10%;
   display: table-cell;
-  padding-left:10%;
 }
-
+div.social{
+  display:table-cell;
+  width:20%;
+}
 img.informatie{
   width: 100px;
   padding-right: 5%;
+  width: 10%;
 }
 
 img.informatie-white{
   width: 100px;
   background-color: white;
-  width: 20%;
+  width: 25%;
+  
 }
 
 img.informatie2{
@@ -204,8 +198,29 @@ img.informatie2{
   padding-left: 4%;
   }
 
-   h1.informatie{
-    padding-left: 30%;
-    text-align: left;
-  }
+h1.informatie{
+  padding-left: 20%;
+  text-align: left;
+}
 
+img.social{
+  width: 15%;
+
+}
+
+div.dark-gray{
+  width: 100%;
+  height: 30px;
+  background-color: black;
+}
+
+@font-face 
+{
+    font-family: SF Pro Display;
+    src: url(//db.onlinewebfonts.com/t/0b51833ff62e4af8acb5fd3e2bf59e97.woff);
+}
+
+html *
+{
+  font-family: "SF Pro Display";
+}
