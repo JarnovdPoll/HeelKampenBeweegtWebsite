@@ -1,0 +1,51 @@
+/* Hier komt de CSS code voor de activiteiten pagina */
+
+html *
+  {
+    font-family: "SF Pro Display";
+  }
+
+h1.titel{
+    text-align: center;
+ 
+}
+
+div.activiteiten{
+    width: 100%;
+}
+
+.block{
+    background-color: aquamarine;
+    display: table;
+    width: 1000px;
+    width:100%;
+    height: 600px;
+}
+
+.smallblock{
+    display: table-cell;
+    background-color: blueviolet;
+    width: 200px;
+    height: 200px;
+    margin: 80%;
+
+}
+
+.smallblock2{
+    display: table-cell;
+    background-color: gold;
+    width: 200px;
+    height: 200px;
+    margin: 80%;
+    vertical-align: 50%;
+    
+}
+
+.smallblock3{
+    display: table-row;
+    background-color: darkcyan;
+    width: 200px;
+    height: 200px; 
+    margin: 80%;
+    vertical-align: 50%;
+}
