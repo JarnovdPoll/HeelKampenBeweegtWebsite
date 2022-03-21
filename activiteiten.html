@@ -6,7 +6,8 @@
     <title>HeelKampenBeweegt</title>
     <link rel="global" href="global.css">
     <link rel="stylesheet" href="activiteiten.css">
-    <script type="module" src="main.js"></script>
+    <script type="module" src="main.js" defer></script>
+    <script src="script.js" defer></script>
 
 </head>
 <body>
@@ -30,8 +31,57 @@
 <!-- Activiteiten -->
 <div class="activiteiten">
     <h1 class="titel">Overzicht activiteiten</h1>
+<!-- Filter -->
 
-    <table class="activities">
+<div>
+    <div class="dropdown" data-dropdown>
+        <button class="link" data-dropdown-button>Sport</button>
+           
+            <div class="dropdown-menu information-grid">
+                <div>
+                <div class="dropdown-links">
+                <option select value=""></option>
+                <option value="Badminton">Badminton</option>
+                <option value="Ballet">Ballet</option>
+                <option value="Dance">Dance</option>
+                <option value="Fitness">Fitness</option>
+                <option value="Gymnastiek en meer">Gymnastiek en meer</option>
+                <option value="Hockey">Hockey</option>
+                <option value="Jazzdance">Jazzdance</option>
+                <option value="Jiu-jitsu">Jiu-jitsu</option>
+            </div>
+            
+            <div class="dropdown-links">
+                <option value="Judo">Judo</option>
+                <option value="Karate">Karate</option>
+                <option value="Korfbal">Korfbal</option>
+                <option value="Krav maga">Krav maga</option>
+                <option value="Scouting">Scouting</option>
+                <option value="Tai chi">Tai chi</option>
+                <option value="Thaiboksen">Thaiboksen</option>
+            </div>
+            <div>
+                <option value="Trampoline springen">Trampoline springen</option>
+                <option value="Voetbal">Voetbal</option>
+                <option value="Volleybal">Volleybal</option>
+                <option value="Wandelsport">Wandelsport</option>
+                <option value="Yoga">Yoga</option>
+                <option value="Zaalvoetbal">Zaalvoetbal</option>
+                <option value="Zwemmen">Zwemmen</option>
+            </div>
+            </div>
+        </div>    
+    </div>
+        
+</div>
+    
+
+
+
+
+
+<!-- Sport blokken -->
+    <table class="activiteiten">
         <tbody>
             <tr>
                 <td>
@@ -41,13 +91,11 @@
                     
                 </td>
                 <td>
-                    
                     <img class="smallblock2">
                     <img class="smallblock2">
                     <img class="smallblock2">
                 </td>
                 <td>
-                    
                     <img class="smallblock3">
                     <img class="smallblock3">
                     <img class="smallblock3">
@@ -70,7 +118,45 @@
 
 
 <!-- Footer -->
-
+<div class="footer">
+    
+    <div class="contact">
+        <h2>Contact</h2>
+        <p>email@gmail.com<br>
+        038 339 2981<br>
+        info@gmail.com<br><br>
+        Burgemeester Berghuisplein 1<br>
+        8261 DD Kampen
+        </p>
+    </div>
+    <div>
+        <div class="informatie">
+            <h2 class="informatie">Meer informatie op</h2>
+            <a href="https://jeugdfondssportencultuur.nl/fondsen/overijssel/">
+                <img class="informatie" src="assets/logo2.png" alt="Jeugd Fonds Sport & Cultuur">
+            </a>
+            <a href="https://sportservicekampen.nl/gezonde-leefstijl/">
+                <img class="informatie-white" src="assets/logo3.png" alt="Jongeren op Gezond Gewicht">
+            </a>    
+            <a href="https://www.cool2bfit.nl/locaties/51/kampen/">
+                <img class="informatie2" src="assets/logo4.png" alt="Cool2BFit">
+            </a>
+         </div>
+    </div>
+    <div class="social">
+        <h2 class="informatie">Volg ons op</h2>
+         <a href="https://www.youtube.com/channel/UCWyYr9t17obSFAXkfa1VVCA">
+            <img class= "social" src="assets/youtube.png" alt="Link naar Youtube kanaal Heel Kampen Beweegt">
+        </a>
+        <a href="https://www.instagram.com/heelkampenbeweegt/">
+            <img class="social" src="assets/instagram.png" alt="Link naar Instagram pagina Heel Kampen Beweegt">
+        </a>
+        <a href="https://www.facebook.com/HeelKampenBeweegt/">
+            <img type="button" class="social" src="assets/facebook.png" alt="Link naar Facebook pagina Heel Kampen Beweegt">
+        </a>
+    </div>
+</div>
+<div class="dark-gray"></div>
 
 </body>
 
