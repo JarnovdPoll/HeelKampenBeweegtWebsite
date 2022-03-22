@@ -17,7 +17,7 @@
 
   a[href].aanmelden{
     text-align: center;
-    padding: 3%;
+    padding-bottom: 4px;
     margin-right: 10px;
     color: var(--main-bg-color);
   }
@@ -51,24 +51,27 @@
     
     padding-left: 3%;
     padding-right: 3%;
-    padding-bottom: 4%;
+    padding-bottom: 0%;
     vertical-align: middle;
     height: 100%;
     max-height: 70px;
   }
 
   div.header-center {
-    display: inline-block;
-    height: 70px;
-    padding-top: 10px;
-    width: 40%;
+    display: flex;
+    height: 30px;
+    padding-top: 20px;
+    width: 100%;
+    align-items: baseline;
   }
 
   div.header-right {
-    display: inline-flex;
-    width: fit-content;
-    padding-bottom: 35px;
-    vertical-align: bottom;
+    text-align: right;
+    width:100%;
+    margin-left: auto;
+    margin-right: 0%;
+    display: flex;
+  
   }
 
   .header a:hover {
