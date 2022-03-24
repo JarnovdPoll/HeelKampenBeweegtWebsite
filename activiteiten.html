@@ -13,20 +13,19 @@
 <body>
 <!-- Header -->
 <div class="header">
-    <img href="#home" class="header" src="assets/logo.jpg" alt="Logo">
-    
+    <img class="header" src="assets/logo.jpg" alt="Logo">
     <div class="header-center">
         <a href="index.html">Home</a>
         <a href="activiteiten.html">Activiteiten</a>
         <a href="#home">Sporten</a>
-        <a href="#home">Sporten</a>
         <a href="#home">Contact</a>
+        
     </div>
-
     <div class="header-right">
         <a class="aanmelden" href="#home">Aanmelden</a>
-        <a class="clickable-button" href="#home">Log in</a>
+        <a class="login-button" href="#home">Log in</a>
     </div>
+    
 </div>
 <!-- Activiteiten -->
 <div class="activiteiten">
@@ -39,14 +38,17 @@
     <button class="link" data-dropdown-button>Soort activiteit</button>
         <div class="dropdown-menu information-grid">
             <div class="dropdown-links">
-                <option value="cultuur">Cultuur</option>
-                <option value="sport">Sport</option>
-                
+                <label for="cultuur">Cultuur
+                    <input class="filter" type="checkbox" id="cultuur" value="cultuur" onchange="filterSelection(value)">
+                </label>
+                <label for="sport">Sport
+                    <input class="filter" type="checkbox" id="sport" value="sport" onchange="filterSelection(value)">
+                </label>
         </div>
     </div>
 </div>
 
-    <div class="dropdown" data-dropdown>
+<div class="dropdown" data-dropdown>
         <button class="link" data-dropdown-button>Sport</button>
             <div class="dropdown-menu information-grid">
                 <div class="dropdown-links">
@@ -125,21 +127,35 @@
                     </label>
                 </div>
                 </div>
-     </div>    
+</div>    
 
 
     
-    <div class="dropdown" data-dropdown>
+        <div class="dropdown" data-dropdown>
         <button class="link" data-dropdown-button>Dag</button>
             <div class="dropdown-menu information-grid">
                 <div class="dropdown-links">
-                    <option value="maandag">Maandag</option>
-                    <option value="dinsdag">Dinsdag</option>
-                    <option value="woensdag">Woensdag</option>
-                    <option value="donderdag">Donderdag</option>
-                    <option value="vrijdag">Vrijdag</option>
-                    <option value="zaterdag">Zaterdag</option>
-                    <option value="zondag">Zondag</option>
+                    <label for="maandag">Maandag
+                        <input class="filter" type="checkbox" id="maandag" value="maandag" onchange="filterSelection(value)">
+                    </label>
+                    <label for="dinsdag">Dinsdag
+                        <input class="filter" type="checkbox" id="dinsdag" value="dinsdag" onchange="filterSelection(value)">
+                    </label>
+                    <label for="woensdag">Woensdag
+                        <input class="filter" type="checkbox" id="woensdag" value="woensdag" onchange="filterSelection(value)">
+                    </label>
+                    <label for="donderdag">Donderdag
+                        <input class="filter" type="checkbox" id="donderdag" value="donderdag" onchange="filterSelection(value)">
+                    </label>
+                    <label for="vrijdag">Vrijdag
+                        <input class="filter" type="checkbox" id="vrijdag" value="vrijdag" onchange="filterSelection(value)">
+                    </label>
+                    <label for="zaterdag">Zaterdag
+                        <input class="filter" type="checkbox" id="zaterdag" value="zaterdag" onchange="filterSelection(value)">
+                    </label>
+                    <label for="zondag">Zondag
+                        <input class="filter" type="checkbox" id="zondag" value="zondag" onchange="filterSelection(value)">
+                    </label>
                 </div>
         </div>
     </div>
@@ -147,12 +163,24 @@
         <button class="link" data-dropdown-button>Leeftijd</button>
             <div class="dropdown-menu information-grid">
                 <div class="dropdown-links">
-                    <option value="1-3">1-3 jaar</option>
-                    <option value="4-6">4-6 jaar</option>
-                    <option value="7-12">7-12 jaar</option>
-                    <option value="13-18">13-18 jaar</option>
-                    <option value="19-69">19-69 jaar</option>
-                    <option value="70">70+ jaar</option>
+                    <label for="1-3">1-3 jaar
+                        <input class="filter" type="checkbox" id="1-3" value="1-3" onchange="filterSelection(value)">
+                    </label>
+                    <label for="4-6">4-6 jaar
+                        <input class="filter" type="checkbox" id="4-6" value="4-6" onchange="filterSelection(value)">
+                    </label>
+                    <label for="7-12">7-12 jaar
+                        <input class="filter" type="checkbox" id="7-12" value="7-12" onchange="filterSelection(value)">
+                    </label>
+                    <label for="13-18">13-18 jaar
+                        <input class="filter" type="checkbox" id="13-18" value="13-18" onchange="filterSelection(value)">
+                    </label>
+                    <label for="19-69">19-69 jaar
+                        <input class="filter" type="checkbox" id="19-69" value="19-69" onchange="filterSelection(value)">
+                    </label>
+                    <label for="70">70+ jaar
+                        <input class="filter" type="checkbox" id="70" value="70" onchange="filterSelection(value)">
+                    </label>
                 </div>
         </div>
     </div>
@@ -160,11 +188,21 @@
         <button class="link" data-dropdown-button>Aantal lessen</button>
             <div class="dropdown-menu information-grid">
                 <div class="dropdown-links">
-                    <option value="1">1 les</option>
-                    <option value="2-5">2-5 lessen</option>
-                    <option value="6-10">6-10 lessen</option>
-                    <option value="11-15">11-15 lessen</option>
-                    <option value="16">16 of meer lessen</option>
+                    <label for="1">1 les
+                        <input class="filter" type="checkbox" id="1" value="1" onchange="filterSelection(value)">
+                    </label>
+                    <label for="2-5">2-5 jaar
+                        <input class="filter" type="checkbox" id="2-5" value="2-5" onchange="filterSelection(value)">
+                    </label>
+                    <label for="6-10">6-10 jaar
+                        <input class="filter" type="checkbox" id="6-10" value="6-10" onchange="filterSelection(value)">
+                    </label>
+                    <label for="11-15">11-15 jaar
+                        <input class="filter" type="checkbox" id="11-15" value="11-15" onchange="filterSelection(value)">
+                    </label>
+                    <label for="16">16 lessen of meer
+                        <input class="filter" type="checkbox" id="16" value="16" onchange="filterSelection(value)">
+                    </label>
                 </div>
         </div>
     </div>
@@ -175,143 +213,99 @@
 
 <!-- Sport blokken -->
 <div class="parent">
-    <div class="filter badminton">
-        <img src="assets/logo.jpg">
+    <div class="filter badminton sport">
+        <img class="activity-image" src="/assets/timthumb (1).jpg">
         
         <p>Badminton</p>
     </div>
-    <div class="filter ballet">
-        <img src="assets/logo.jpg">
+    <div class="filter ballet sport">
+        <img class="activity-image" src="/assets/timthumb (1).png">
         
         <p>Ballet</p>
     </div>
-    <div class="filter dance">
-        <img src="assets/logo.jpg">
+    <div class="filter dance sport">
+        <img class="activity-image" src="/assets/timthumb (2).jpg">
         
         <p>Dance</p>
     </div>
-    <div class="filter fitness">
-        <img src="assets/logo.jpg">
+    <div class="filter fitness sport">
+        <img class="activity-image" src="/assets/timthumb (2).png">
         
         <p>Fitness</p>
     </div>
-    <div class="filter badminton">
+    <div class="filter badminton sport">
+        <img class="activity-image" src="/assets/timthumb (3).jpg">
+        
+        <p>Badminton</p>
+    </div>
+    <div class="filter badminton sport">
+        <img class="activity-image" src="/assets/timthumb (3).png">
+        
+        <p>Badminton</p>
+    </div>
+    <div class="filter badminton sport">
         <img src="assets/logo.jpg">
         
         <p>Badminton</p>
     </div>
-    <div class="filter badminton">
-        <img src="assets/logo.jpg">
-        
-        <p>Badminton</p>
-    </div>
-    <div class="filter badminton">
-        <img src="assets/logo.jpg">
-        
-        <p>Badminton</p>
-    </div>
-    <div class="filter ballet">
+    <div class="filter ballet sport">
         <img src="assets/logo.jpg">
         
         <p>Ballet</p>
     </div>
-    <div class="filter ballet">
+    <div class="filter ballet sport">
         <img src="assets/logo.jpg">
         
         <p>Ballet</p>
     </div>
-    <div class="filter ballet">
+    <div class="filter ballet sport">
         <img src="assets/logo.jpg">
         
         <p>Ballet</p>
     </div>
-    <div class="filter dance">
+    <div class="filter dance sport">
         <img src="assets/logo.jpg">
         
         <p>Dance</p>
     </div>
-    <div class="filter dance">
+    <div class="filter dance sport">
         <img src="assets/logo.jpg">
         
         <p>Dance</p>
     </div>
-    <div class="filter dance">
+    <div class="filter dance sport">
         <img src="assets/logo.jpg">
         
         <p>Dance</p>
     </div>
-    <div class="filter volleybal">
+    <div class="filter volleybal sport">
         <img src="assets/logo.jpg">
         
         <p>Volleybal</p>
     </div>
-    <div class="filter wandelsport">
+    <div class="filter wandelsport sport">
         <img src="assets/logo.jpg">
         
         <p>Wandelsport</p>
     </div>
-    <div class="filter yoga">
+    <div class="filter yoga sport">
         <img src="assets/logo.jpg">
         
         <p>Yoga</p>
     </div>
-    <div class="filter zaalvoetbal">
+    <div class="filter zaalvoetbal sport">
         <img src="assets/logo.jpg">
         
         <p>Zaalvoetbal</p>
     </div>
-    <div class="filter zwem">
+    <div class="filter zwem sport">
         <img src="assets/logo.jpg">
         
-        <p>Zwem</p>
+        <p>Zwemmen</p>
     </div>
 </div>
 
-    <table class="activiteiten">
-        <tbody>
-            <tr>
-                <td>
-                    <div class="filter dance">
-                        <img class="smallblock">
-                    </div>
-                    <div class="filter ballet">
-                        <img class="smallblock">
-                    </div>
-                    <div class="filter badminton">
-                        <img class="smallblock">
-                    </div>
-                    
-                </td>
-                <td>
-                    <div class="filter badminton">
-                        <img class="smallblock2">
-                    </div>
-                    <div class="filter dance">
-                        <img class="smallblock2">
-                    </div>
-                    <div class="filter badminton">
-                        <img class="smallblock2">
-                    </div>
-                </td>
-                <td>
-                    <div class="filter ballet">
-                        <img class="smallblock3">
-                    </div>
-                    <div class="filter ballet">
-                        <img class="smallblock3">
-                    </div>
-                    <div class="filter dance">
-                        <img class="smallblock3">
-                    </div>
-                </td>
-            </tr>
-        </tbody>
-    </table>
-    <div class="block">
-        
-    </div>
-</div>
-
+   
 
 
 

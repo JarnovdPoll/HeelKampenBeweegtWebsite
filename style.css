@@ -11,6 +11,7 @@
       padding-top: 5px;
       height: 50px;
       max-height: 50px;
+      width: 100%;
       padding-top: 1%;
       padding-bottom: 2%;
   }
@@ -20,6 +21,15 @@
     padding-bottom: 4px;
     margin-right: 10px;
     color: var(--main-bg-color);
+  }
+  a[href].login-button{
+    background-color: var(--main-bg-color);
+    text-overflow:  ellipsis;
+    border-radius: 6px;
+    min-width: 70px;
+    text-align: center;
+    font-size: 24px;
+    color:white;
   }
 
   a[href].clickable-button{
@@ -58,20 +68,20 @@
   }
 
   div.header-center {
-    display: flex;
+    width: 500px;
     height: 30px;
-    padding-top: 20px;
-    width: 100%;
+    padding-top: 2%;
+    padding-left: 5%;
     align-items: baseline;
   }
 
   div.header-right {
     text-align: right;
-    width:100%;
     margin-left: auto;
-    margin-right: 0%;
-    display: flex;
-  
+    padding-right: 5%;
+    padding-top: 16px;
+    display: inline-flex;
+    align-items: baseline;
   }
 
   .header a:hover {
@@ -93,11 +103,12 @@
   .header a {
     float: center;
     color: black;
-    padding-left: 2%;
-    padding-right: 2%;
+    padding-left: 5%;
+    padding-right: 5%;
     padding-top: 1%;
     padding-bottom: 1%;
     text-decoration: none;
+    border-radius: 10px;
     font-size: 20px;
   }
 
